@@ -5,20 +5,20 @@
 class Pigil < Formula
   desc "Pigil - Homegrown Proces Vigilance System"
   homepage ""
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/DarthBenro008/pigil/releases/download/v0.1.1/pigil_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "7e77c9b8a0c38876ef4743c67463a53e065e27053960c5b00df3d5901ad57046"
+      url "https://github.com/DarthBenro008/pigil/releases/download/0.1.2/pigil_0.1.2_Darwin_arm64.tar.gz"
+      sha256 "0d09997d8a0a972adc4e553f74b92e7c956f7cad08d11983302c8c04c313ad26"
 
       def install
         bin.install "pigil"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/DarthBenro008/pigil/releases/download/v0.1.1/pigil_0.1.1_Darwin_x86_64.tar.gz"
-      sha256 "06d9de5d73fe9399d924adc9778a6a6df9fbd3770fb165073198034493c09a2c"
+      url "https://github.com/DarthBenro008/pigil/releases/download/0.1.2/pigil_0.1.2_Darwin_x86_64.tar.gz"
+      sha256 "27c96ba030504ef271cba18a6e7c4e76b3b287b827e2ee16a48d21e695b8f71a"
 
       def install
         bin.install "pigil"
@@ -28,16 +28,16 @@ class Pigil < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DarthBenro008/pigil/releases/download/v0.1.1/pigil_0.1.1_Linux_arm64.tar.gz"
-      sha256 "d5e6aa2b5584f33720296be684e5f940a264fbc42747c77500786edbcf430a7d"
+      url "https://github.com/DarthBenro008/pigil/releases/download/0.1.2/pigil_0.1.2_Linux_arm64.tar.gz"
+      sha256 "fc823485df83b617fcf09fa93be98a4aff64cb40f3c949224b6778d1f11f2466"
 
       def install
         bin.install "pigil"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/DarthBenro008/pigil/releases/download/v0.1.1/pigil_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "a52db210525f123053e5c35b66010d8ec7c824f007ba6c209ffa0b2813787965"
+      url "https://github.com/DarthBenro008/pigil/releases/download/0.1.2/pigil_0.1.2_Linux_x86_64.tar.gz"
+      sha256 "34a6b08dcfa1f9e74e191f137060a20631cb6f56a8cc7f6a666900e1f7e5123e"
 
       def install
         bin.install "pigil"
