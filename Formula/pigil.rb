@@ -10,7 +10,7 @@ class Pigil < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/DarthBenro008/pigil/releases/download/0.1.2/pigil_0.1.2_Darwin_arm64.tar.gz"
-      sha256 "0d09997d8a0a972adc4e553f74b92e7c956f7cad08d11983302c8c04c313ad26"
+      sha256 "5b1894c58c6da76e9735d842c006cbd6a18a6f0cb673ab4447e564db346759d3"
 
       def install
         bin.install "pigil"
@@ -18,7 +18,7 @@ class Pigil < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/DarthBenro008/pigil/releases/download/0.1.2/pigil_0.1.2_Darwin_x86_64.tar.gz"
-      sha256 "27c96ba030504ef271cba18a6e7c4e76b3b287b827e2ee16a48d21e695b8f71a"
+      sha256 "2472e826de0e1ee4ee2f311d0747d0098a909eab055841dec7b411f1b244d9f6"
 
       def install
         bin.install "pigil"
@@ -29,7 +29,7 @@ class Pigil < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/DarthBenro008/pigil/releases/download/0.1.2/pigil_0.1.2_Linux_arm64.tar.gz"
-      sha256 "fc823485df83b617fcf09fa93be98a4aff64cb40f3c949224b6778d1f11f2466"
+      sha256 "55e9061f7b24ce30a53a085633b3d36789ab2f07c641d5f2804e13bd85722caa"
 
       def install
         bin.install "pigil"
@@ -37,7 +37,7 @@ class Pigil < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/DarthBenro008/pigil/releases/download/0.1.2/pigil_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "34a6b08dcfa1f9e74e191f137060a20631cb6f56a8cc7f6a666900e1f7e5123e"
+      sha256 "ef6ba6d93f6d5c8631a443dfc5c6fda29cf9bebfa302678c2c1f9efda133f7fa"
 
       def install
         bin.install "pigil"
