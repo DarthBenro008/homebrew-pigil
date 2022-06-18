@@ -5,20 +5,20 @@
 class Pigil < Formula
   desc "Pigil - Homegrown Proces Vigilance System"
   homepage ""
-  version "0.1.2"
+  version "0.1.4"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/DarthBenro008/pigil/releases/download/0.1.2/pigil_0.1.2_Darwin_arm64.tar.gz"
-      sha256 "5b1894c58c6da76e9735d842c006cbd6a18a6f0cb673ab4447e564db346759d3"
+    if Hardware::CPU.intel?
+      url "https://github.com/DarthBenro008/pigil/releases/download/v0.1.4/pigil_0.1.4_Darwin_x86_64.tar.gz"
+      sha256 "42afb147e8cd5a59c5cc3710a6d20e0d77a05bc719df8de137a3dea425a729f1"
 
       def install
         bin.install "pigil"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/DarthBenro008/pigil/releases/download/0.1.2/pigil_0.1.2_Darwin_x86_64.tar.gz"
-      sha256 "2472e826de0e1ee4ee2f311d0747d0098a909eab055841dec7b411f1b244d9f6"
+    if Hardware::CPU.arm?
+      url "https://github.com/DarthBenro008/pigil/releases/download/v0.1.4/pigil_0.1.4_Darwin_arm64.tar.gz"
+      sha256 "3352a8a17849016900d60f8ee5f52d5f85542f0c7e8b4703588924e4de4c14b2"
 
       def install
         bin.install "pigil"
@@ -28,16 +28,16 @@ class Pigil < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DarthBenro008/pigil/releases/download/0.1.2/pigil_0.1.2_Linux_arm64.tar.gz"
-      sha256 "55e9061f7b24ce30a53a085633b3d36789ab2f07c641d5f2804e13bd85722caa"
+      url "https://github.com/DarthBenro008/pigil/releases/download/v0.1.4/pigil_0.1.4_Linux_arm64.tar.gz"
+      sha256 "0026aff22f0458d6c6af724494ac071d250019bada4897cec2d8b9643029cd67"
 
       def install
         bin.install "pigil"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/DarthBenro008/pigil/releases/download/0.1.2/pigil_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "ef6ba6d93f6d5c8631a443dfc5c6fda29cf9bebfa302678c2c1f9efda133f7fa"
+      url "https://github.com/DarthBenro008/pigil/releases/download/v0.1.4/pigil_0.1.4_Linux_x86_64.tar.gz"
+      sha256 "9573062b895b0b6f86450def65d90af3c1370c20ed9d2d5c2559b49e8863bf36"
 
       def install
         bin.install "pigil"
